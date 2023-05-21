@@ -35,12 +35,11 @@ Berikut ini adalah langkah-langkah dan penerapan dalam pengimplementasian CONSTR
 
 ![gambar1](screenshot/ss1.png)
 
-- Membuat foreign key
+***Membuat foreign key***
 
-Dalam ALTER TABLE:
-
-ALTER TABLE mahasiswa
+- Dalam ALTER TABLE:
 ```
+ALTER TABLE mahasiswa
 ADD CONSTRAINT fk_dosenwali FOREIGN KEY (kd_ds)     REFERENCES dosen(kd_ds)
 ```
 
@@ -60,8 +59,8 @@ REFERENCES dosen(kd_ds)
 
 ![gambar3](screenshot/ss3.png)
 
-1. **Lakukan penambahan data pada tabel mahasiswa dengan mengisi kd_ds yang belum ada pada data dosen.
-dengan menggunakan kode berikut :**
+1. Lakukan penambahan data pada tabel mahasiswa dengan mengisi kd_ds yang belum ada pada data dosen.
+dengan menggunakan kode berikut :
 ```
 INSERT INTO dosen (kd_ds, nama) VALUES
 ('DS001', 'Abdillah'),
@@ -72,11 +71,11 @@ INSERT INTO dosen (kd_ds, nama) VALUES
 ```
 ![gambar4](screenshot/ss4.png)
 
-Outputnya :
+***Output :***
 
 ![gambar5](screenshot/ss5.png)
 
-**2. Hapus satu record data pada tabel dosen yang telah dirujuk pada tabel mahasiswa.**  
+2. Hapus satu record data pada tabel dosen yang telah dirujuk pada tabel mahasiswa. 
 ```
 DELETE FROM dosen WHERE kd_ds = 'DS001';
 ```
@@ -107,7 +106,7 @@ DELETE FROM dosen WHERE kd_ds = 'DS001';
 ```
 ![gambar8](screenshot/ss8.png)
 
-Output :
+***Output :***
 
 ![gambar9](screenshot/ss9.png)
 
@@ -131,7 +130,7 @@ REFERENCES dosen (kd_ds)
 ON UPDATE CASCADE
 ON DELETE RESTRICT;
 ```
-Output :
+***Output :***
 
 ![gambar10](screenshot/ss10.png)
 
@@ -280,7 +279,7 @@ Dalam banyak kasus, pemilihan antara `RESTRICT dan CASCADE `tergantung pada kebu
 
 - **CASCADE** melakukan tindakan yang sama pada data yang terkait. Jika Anda menghapus atau memperbarui data, CASCADE akan mempengaruhi semua data terkait, termasuk data anak yang terhubung secara rekursif.  
 
-***Buat laporan praktikum yang berisi, langkah-langkah praktikum beserta screenshot yang sudah dilakukan dalam bentuk dokumen.***
+### Buat laporan praktikum yang berisi, langkah-langkah praktikum beserta screenshot yang sudah dilakukan dalam bentuk dokumen.
 
 <img src=https://pngimg.com/uploads/google_drive/google_drive_PNG9.png width="110px" >
 
