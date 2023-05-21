@@ -283,6 +283,6 @@ Dalam banyak kasus, pemilihan antara `RESTRICT dan CASCADE `tergantung pada kebu
 
 <img src=https://pngimg.com/uploads/google_drive/google_drive_PNG9.png width="110px" >
 
-- [Link Laporan Praktikum]
+- [Link Laporan Praktikum](https://bit.ly/3onAF8v)
 
 ## FINISH
